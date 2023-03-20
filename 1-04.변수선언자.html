@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        // var - 문제점이 있어 es6에서 let, const 추가됨
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        console.log(x, y, z);
+
+        var x = 7;
+        z = x + y;
+        console.log(x, z);
+
+        // var은 재선언이 되어도 에러가 발생하지 않음 ( 특징? )
+
+        // let
+        let x1 = 5;
+        let y1 = 6;
+        let z1 = x1 + y1;
+        
+        // let x1 = 7;
+        // let은 이미 선언되어 있으면 에러 발생
+        
+        // const 변경불가
+        const PI = 3.14;
+        // PI = 2.12;
+    </script>
+</body>
+</html>
