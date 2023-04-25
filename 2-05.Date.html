@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        //
+        var d = new Date(); // 현재 날짜/시간
+        console.log(d);
+
+        var d = new Date(2021, 3, 27, 11, 14, 23);
+        console.log(d);
+
+        console.log("timezone", d.getTimezoneOffset()); // 분단위
+
+        var year = d.getFullYear();
+        var utcYear = d.getUTCFullYear();       //UTC 기준
+        console.log("year", year);
+        console.log("UTCyear", utcYear);
+
+        var month = d.getMonth();
+        console.log("month", month);
+
+        var date = d.getDate();
+        console.log("date", date);
+
+        // 요일
+        var day = d.getDay();
+        console.log("day", day);
+
+        var hour = d.getHours();
+        var minute = d.getMinutes();
+        var second = d.getSeconds();
+
+        // moment.js 많이 쓰는 라이브러리(시간)
+
+        console.log(moment().format("YYYY-MM-DD"));
+        console.log(moment().format("MMM DD, YYYY"));
+        console.log(moment().subtract(7, "days").format("YYYY-MM-DD"));
+        console.log(moment().add(7, "days").format("YYYY-MM-DD"));
+        console.log(moment().add(4, "hours").format("YYYY-MM-DD"));
+        
+    </script>
+</body>
+</html>
