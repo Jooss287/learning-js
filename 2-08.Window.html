@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        console.log(window);
+
+        // window.alert("alart window");
+        
+        //var yn = window.confirm("정말 삭제하시겠습니까? ");
+        //console.log(yn);
+
+        //var input = window.prompt("비밀번호를 입력하세요");
+        //console.log(input);
+
+        //window.open("https://naver.com");
+
+        //window.print();
+
+        window.setTimeout(function() {
+            console.log("5초 후 프로그램 실행");
+        }, 5000);
+
+        var i = 0;
+        var fnc = window.setInterval(function() {
+            console.log("3초마다 프로그램 실행 - " + i);
+            if (i == 3) {
+                clearInterval(fnc);
+            }
+            i++;
+        }, 3000);
+
+    </script>
+</body>
+</html>

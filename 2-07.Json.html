@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        // JSON
+
+        var data = {
+            "employees": [
+            {"firstName":"John", "lastName":"Doe"},
+            {"firstName":"John", "lastName":"Doe"},
+            {"firstName":"John", "lastName":"Doe"}
+            ]
+        };
+
+        //JSON.stringify
+        console.log(data);
+        var str = JSON.stringify(data);
+        console.log(str);
+        
+        //JSON.parse
+        var data2 = JSON.parse(str);
+        console.log(data2);
+
+    </script>
+</body>
+</html>

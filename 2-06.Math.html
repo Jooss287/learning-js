@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        // Math
+
+        // round()
+        console.log(Math.round(4.9));
+
+        // ceil()
+        console.log(Math.ceil(6.2));
+
+        // floor()
+        console.log(Math.floor(9.9));
+        console.log(Math.floor(-4.2));
+
+        // trunc()
+        // 정수 리턴
+        console.log(Math.trunc(9.9));
+        console.log(Math.trunc(-4.2));
+
+        // sign()
+        // 음수면 -1, 양수면 1, 0이면 0
+        console.log(Math.sign(-7));
+        
+        // pow()
+        console.log(Math.pow(8,2));
+
+        // sqrt()
+        console.log(Math.sqrt(64));
+
+        // abs()
+        console.log(Math.abs(-4.7));
+
+        // max()
+        console.log(Math.max(0, 150, 23, 45, -28, 77));
+        console.log(Math.min(0, 150, 23, 45, -28, 77));
+
+        // random()
+        var ran = Math.random();   // 0 ~ 1
+        console.log(ran);
+        // 1~10
+        var x = Math.floor(ran * 10);
+        console.log(x);
+        // 1~100
+        var x = Math.floor(ran * 100);
+        console.log(x);
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        console.log(getRndInteger(5, 11));
+        
+    </script>
+</body>
+</html>
