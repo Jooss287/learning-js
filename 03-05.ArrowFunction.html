@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        function hello() {
+            var msg = "Hello World"
+            console.log(msg);
+            return msg
+        }
+
+        var hello = function() {
+            var msg = "Hello World"
+            console.log(msg);
+            return msg
+        }
+
+        var hello = () => {
+            var msg = "Hello World"
+            console.log(msg);
+            return msg
+        }
+
+        var hello = () => "Hello World";
+        var hello = (fullName, lastName) => "Hello " + fullName + " " + lastName;
+
+        console.log(hello("John", "Doe"));
+    </script>
+</body>
+</html>

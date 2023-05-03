@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        function say(msg) {
+            console.log(msg);
+        }
+        
+        say("안녕하세요");
+        say();
+        
+        function say2(msg) {
+            if (msg != undefined) {
+                console.log(msg);
+            } else {
+                console.log("파라미터가 넘어오지 않았어요.");
+            }
+        }
+        
+        say2("안녕하세요");
+        say2();
+
+        function say3(msg="파라미터가 넘어오지 않았어요.") {
+            console.log(msg);
+        }
+
+        say3("안녕하세요");
+        say3();
+
+        function plus(x, y=1){
+            console.log(x+y);
+        }
+
+        plus(4);
+    </script>
+</body>
+</html>
