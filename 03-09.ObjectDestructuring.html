@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        function getPersion() {
+            return {
+                firstName: "John",
+                lastName: "Doe",
+                age: 37,
+                email: "john@gmail.com",
+                city: "New York",
+                contry: "USA",
+            };
+        }
+
+        var {firstName, lastName, city} = getPersion();
+        console.log(firstName);
+        console.log(lastName);
+        console.log(city);
+    </script>
+</body>
+</html>

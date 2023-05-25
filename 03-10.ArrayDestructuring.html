@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <script>
+        // Array Destructuring
+
+        function getScores() {
+            return [70, 80, 90];
+        }
+
+        var score = getScores();
+        console.log(score);
+        console.log(score[0]);
+        
+        var [x, y, z] = getScores();
+        console.log(x, y, z);
+
+        function getLocation() {
+            return [123.12, 23.023];
+        }
+
+        var [latitude, longitude] = getLocation();
+        console.log(latitude);
+    </script>
+</body>
+</html>
